@@ -1,0 +1,13 @@
+{% extends "sonotone/base_sonotone.html" %}
+
+{% block content %}
+    {% if contact %}
+        <div>
+            <span>{{ contact.firstname }}</span>
+            <span>{{ contact.surname }}</span>
+            <span>{{ contact.email }}</span>
+        </div>
+    {% else %}
+        <p>No data available for this user.</p>
+    {% endif %}
+{% endblock %}

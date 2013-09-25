@@ -1,0 +1,6 @@
+Django==1.5.3
+django-debug-toolbar==0.9.4
+django-debug-toolbar-template-timings==0.5.1
+postgres==1.1.0
+psycopg2==2.5.1
+wsgiref==0.1.2

@@ -1,0 +1,11 @@
+media
+.idea
+env
+*.pyc
+*.sqlite
+.sass-cache
+DATABASE_PATH
+
+.DS_Store
+.coverage
+htmlcov

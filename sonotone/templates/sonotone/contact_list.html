@@ -1,0 +1,18 @@
+{% extends "sonotone/base_sonotone.html" %}
+
+{% block content %}
+
+    <h1>Contacts</h1>
+
+    {% if contact_list %}
+        <ul>
+            {% for contact in contact_list %}
+                <li>{{ contact.email }} {{ contact.subject }} {{ contact.message }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No Contact available.</p>
+    {% endif %}
+
+
+{% endblock %}

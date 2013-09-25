@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sonotone Webzine</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'sonotone/main.css' %}" />
+</head>
+<body>
+<header>
+    <div id="branding">
+        <a href="/"><h1>Sonotone</h1></a>
+    </div>
+</header>
+<nav>
+    <a href="{% url 'albums' %}">Albums</a>
+    <a href="/">Concerts</a>
+    <a href="{% url 'contact_form' %}">Watch it</a>
+</nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>

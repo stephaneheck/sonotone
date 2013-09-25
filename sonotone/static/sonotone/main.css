@@ -1,0 +1,98 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: normal;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0; }
+
+/* GENERAL STYLES
+----------------------------------------------- */
+body {
+  color: #222;
+  font-size: 100%;
+  font-family: ff-meta-serif-web-pro, Georgia, Helvetica, Arial, sans-serif;
+
+}
+
+/* LINKS */
+a:link, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover, a:focus {
+  color: #555; }
+
+/* SELECTION COLORS */
+::selection {
+  background: rgba(0, 0, 0, 0.1); }
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.1); }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+header #branding {
+    font-family: stratum-2, sommet-rounded, Helvetica, Arial, sans-serif;
+    height: 70px;
+    background: #FFF url("images/header-bg.png");
+}
+header #branding h1 {
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+nav {
+    background: silver;
+}
+
+
+
+#contact_form {
+    background-color: cadetblue;
+/*    margin-left: 120px;*/
+    width:800px;
+}
+.fieldWrapper {
+    padding-top: 10px;
+}
+.fieldWrapper label {
+    /*background-color: green;*/
+    width: 120px;
+}
+.fieldWrapper input {
+    /*background-color: red;*/
+    position: absolute;
+    left: 320px;
+    width: 320px;
+}
+.form_submit {
+    /*background-color: pink;*/
+    padding-top: 10px;
+    text-align: center;
+}
+.errorlist {
+    /*background-color: yellow;*/
+    color: darkred;
+}
+.errorlist ul,li {
+}
+

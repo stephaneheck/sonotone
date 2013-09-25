@@ -1,0 +1,14 @@
+{% extends "sonotone/base_sonotone.html" %}
+
+{% block content %}
+    {% if album %}
+        <div>
+            <span>{{ album.artist }}</span>
+            <span>{{ album.name }}</span>
+            <span>{{ album.release_date }}</span>
+            <span>{{ album.style }}</span>
+        </div>
+    {% else %}
+        <p>Unavailable in Stock.</p>
+    {% endif %}
+{% endblock %}

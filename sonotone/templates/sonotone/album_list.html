@@ -1,0 +1,29 @@
+{% extends "sonotone/base_sonotone.html" %}
+
+{% block content %}
+
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="/search/" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Search">
+    </form>
+
+    <div>
+
+        <p>liste tous les albums...</p>
+    </div>
+
+    <div class="album_list">
+    {% if album_list %}
+        <ul>
+            {% for album in album_list %}
+                <li><a href="/albums/{{ album.id }}/">{{ album.artist }} {{ album.name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No Albums are available.</p>
+    {% endif %}
+    </div>
+{% endblock %}
